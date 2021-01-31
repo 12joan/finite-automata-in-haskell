@@ -1,0 +1,39 @@
+name:                finite-automata-in-haskell
+version:             0.1.0.0
+github:              "12joan/finite-automata-in-haskell"
+license:             Unlicense
+author:              "Joe Anderson"
+maintainer:          "joe@osbert.me"
+copyright:           "Public Domain"
+
+# extra-source-files:
+# - README.md
+# - ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description: DFA, NFA and regular expressions in Haskell
+
+dependencies:
+- base >= 4.7 && < 5
+- mtl >= 2.2.2 && < 3
+- parsec
+
+library:
+  source-dirs: src
+
+executables:
+  regex:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - finite-automata-in-haskell
