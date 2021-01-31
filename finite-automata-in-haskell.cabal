@@ -4,7 +4,7 @@ cabal-version: 2.2
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: a25e17ea76fb54d3bd85c5b6613823bbbe544f7264f31a05e858672ef2cbaa3f
+-- hash: f586b36f6ce0e1aa7766dd59c9f02440a263624ca9f04ac2953edbc0001040b1
 
 name:           finite-automata-in-haskell
 version:        0.1.0.0
@@ -26,6 +26,7 @@ library
   exposed-modules:
       DFA
       NFA
+      NFABuilder
       RegularExpression
   other-modules:
       Paths_finite_automata_in_haskell
